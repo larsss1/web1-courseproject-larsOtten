@@ -29,8 +29,9 @@ h1 {
 	color: #11314a;
 }
 h2 {
+	font-size: 60px;
 	color: white;
-	padding-left: 20px;
+	padding-left: 3%;
 }
 header {
 	background-color: #7297b1;
@@ -55,7 +56,9 @@ a:hover {
 }
 .skills {
 	background-color: #7297b1;
-	padding: 20px 60px 20px 60px;
+	padding-left: 5%;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 h3 {
@@ -102,6 +105,7 @@ h4 {
 	background-color: #b0c5cc;
 	padding-left: 5%;
 	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .kader2 {
 	margin-left: 3%;
