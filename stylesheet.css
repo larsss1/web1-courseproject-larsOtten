@@ -70,46 +70,48 @@ h4 {
 	padding-left: 3%;
 }
 .kader1 {
-	width: 1300px;
-	height: 50px;
+	width: 90%;
+	height: 3%;
 	background-color: white;
 	margin-left: 3%;
 }
 .vulling1 {
-	width: 1100px;
+	width: 75%;
 	height: 50px;
 	background-color: #11314a;
 }
 
 .vulling2 {
-	width: 1150px;
+	width: 80%;
 	height: 50px;
 	background-color: #11314a;
 }
 
 .vulling3 {
-	width: 1000px;
+	width: 90%;
 	height: 50px;
 	background-color: #11314a;
 }
 
 .vulling4 {
-	width: 950px;
+	width: 75%;
 	height: 50px;
 	background-color: #11314a;
 }
 .mijnwerk {
 	background-color: #b0c5cc;
-	padding: 20px 60px 20px 60px;
+	padding-left: 5%;
+	padding-top: 60px;
 }
 .kader2 {
-	width: 1500px;
+	margin-left: 3%;
+	width: 90%;
 	height: 150px;
 	background-color: #11314a;
-	justify-content: center;
 }
 h5 {
 	color: #11314a;
 	font-size: 43px;
 	margin-top: 10px;
+	margin-left: 6%;
 }
