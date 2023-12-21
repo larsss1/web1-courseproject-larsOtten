@@ -121,12 +121,6 @@ h5 {
 	margin-top: 10px;
 	margin-left: 6%;
 }
-.about {
-	margin-bottom: -4px;
-	background-color: #b0c5cc;
-	margin: none;
-	width: 100%;
-}
 
 .aboutFoto {
 	width: 50%;
@@ -135,39 +129,13 @@ h5 {
 	position: relative;
 	float: left;
 }
-.aboutImage {
-	background-color: #b0c5cc;
-	background-image: url("afbeeldingen/1x/fotopagina3webcourseproject.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-}
-.aboutText {
-	width: 50%;
-	height: 640px;
-	display: inline-block;
-	position: relative;
-	float: left;
-	vertical-align: middle;
-}
-.een {
-	background-color: #b0c5cc;
-}
-.twee {
-	background-color: #7aa5b8;
-}
+
 .basis {
 	font-size: 20px;
 	color: white;
 	padding-left: 20px;
 }
-.hobbyimage {
-	background-color: #7aa5b8;
-	background-image: url("afbeeldingen/1x/afbeelding4.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-}
+
 .contact {
 	background-color: #7aa5b8;
 	margin: none;
@@ -203,4 +171,47 @@ h5 {
 	font-size: 20px;
 	color: white;
 	padding-left: 20px;
+}
+.about {
+	display: flex;
+	margin-bottom: -4px;
+	background-color: #b0c5cc;
+	margin: none;
+	width: 100%;
+}
+.about div {
+	flex: 1;
+}
+.aboutImage {
+	background-color: #b0c5cc;
+	background-image: url("afbeeldingen/1x/fotopagina3webcourseproject.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.aboutText {
+	width: 50%;
+	height: 640px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	vertical-align: middle;
+}
+.een {
+	background-color: #b0c5cc;
+}
+.twee {
+	background-color: #7aa5b8;
+}
+.hobbyimage {
+	background-color: #7aa5b8;
+	background-image: url("afbeeldingen/1x/afbeelding4.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+@media screen and (max-width: 768px) {
+	.about {
+		flex-direction: column;
+	}
 }
