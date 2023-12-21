@@ -32,6 +32,7 @@ h2 {
 	font-size: 60px;
 	color: white;
 	padding-left: 3%;
+	padding-right: 3%;
 }
 header {
 	background-color: #7297b1;
@@ -71,6 +72,7 @@ h4 {
 	font-size: 33px;
 	margin-bottom: 10px;
 	padding-left: 3%;
+	padding-right: 3%;
 }
 .kader1 {
 	width: 90%;
