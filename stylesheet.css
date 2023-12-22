@@ -4,11 +4,69 @@ body {
 	font-family: "Comfortaa";
 	margin: 0;
 }
+
 .wrapper {
-	//background-color: red;
 	width: 80%;
 	margin: 0 auto;
-	font-size: 33px;
+}
+
+header {
+	background-color: #7297b1;
+	padding: 20px 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 0;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: ;
+	background-image: url(afbeeldingen/1x1-ffffffff.png);
+	background-repeat: repeat-x;
+	animation: reveal-background 2s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes reveal-background {
+	0% {
+		background-size: 0px;
+		background-position-y: 0%;
+	}
+	10% {
+		background-size: 18px;
+		background-position-y: 0%;
+	}
+	45% {
+		background-position-y: 100%;
+	}
+	70% {
+		background-size: 45px;
+		background-position-y: 0%;
+	}
+	100% {
+		background-size: 60px;
+	}
+}
+h2 {
+	font-size: 60px;
+	color: white;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.menu-toggle span {
+	display: block;
+	height: 3px;
+	width: 25px;
+	background-color: #11314a;
+	margin: 5px 0;
 }
 
 nav {
@@ -18,29 +76,55 @@ nav {
 }
 
 nav a {
-	//background-color: yellow;
+	border-radius: 5px;
+	padding: 8px 18px;
+	color: white;
+	text-decoration: none;
+	display: flow-root;
+	transition: background-color 0.5s, transform 0.5s;
+	transition-timing-function: ease-out;
 }
 
-h1 {
-	font-size: 222px;
-	margin: 0;
-	padding-top: 60px;
-	text-align: center;
-	color: #11314a;
+nav a:hover {
+	background-color: #11314a;
+	transform: translateY(-5px);
 }
-h2 {
-	font-size: 60px;
-	color: white;
-	padding-left: 3%;
-	padding-right: 3%;
-}
-header {
-	background-color: #7297b1;
-	padding: 20px 60px 20px 60px;
+
+@media only screen and (max-width: 1000px) {
+	header {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	h1 {
+		font-size: 40px;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+
+	nav {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		width: 100%;
+		background-color: #7297b1;
+	}
+
+	nav.show {
+		display: flex;
+	}
+
+	nav a {
+		text-align: right;
+		padding: 8px 20px;
+	}
 }
 .fotoh img {
 	width: 100%;
-	margin-bottom: -4px;
+	margin-bottom: -18px;
 }
 a {
 	border-radius: 5px;
@@ -121,7 +205,6 @@ h5 {
 	margin-top: 10px;
 	margin-left: 6%;
 }
-
 .aboutFoto {
 	width: 50%;
 	height: 640px;
@@ -138,80 +221,114 @@ h5 {
 
 .contact {
 	background-color: #7aa5b8;
-	margin: none;
 	width: 100%;
-	height: 1100px;
+	height: 1500px;
 }
 
 .contactFoto {
-	width: 50%;
-	height: 800px;
+	width: 100%;
 	display: inline-block;
-	background-color: #2d3134;
-	position: relative;
 	float: left;
 }
-.aboutImage2 {
-	background-image: url("afbeeldingen/1x/boksfoto.jpeg");
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-}
-.aboutText2 {
-	width: 50%;
-	height: 800px;
-	display: inline-block;
-
-	position: relative;
-	float: left;
-	vertical-align: middle;
-}
-
 .basis {
 	font-size: 20px;
 	color: white;
 	padding-left: 20px;
 }
-.about {
+.about1 {
 	display: flex;
-	margin-bottom: -4px;
 	background-color: #b0c5cc;
 	margin: none;
 	width: 100%;
 }
-.about div {
-	flex: 1;
+.about1 div {
+	//	flex: 1;
+	//	flex-direction: row;
+	//	justify-content: space-between;
 }
+
 .aboutImage {
 	background-color: #b0c5cc;
-	background-image: url("afbeeldingen/1x/fotopagina3webcourseproject.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
+	vertical-align: left;
 }
-.aboutText {
+.aboutImage img {
+	width: 100%;
+}
+.een {
+	background-color: #b0c5cc;
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+.about2 {
+	display: flex;
+	background-color: #7aa5b8;
+	margin: none;
+	width: 100%;
+}
+.about2 div {
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.twee {
+	background-color: #7aa5b8;
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+.hobbyimage {
+	background-color: #7aa5b8;
+	vertical-align: right;
+}
+.hobbyimage img {
+	width: 100%;
+}
+@media screen and (max-width: 1000px) {
+	.about1 {
+		flex-direction: column;
+	}
+	.een {
+		float: left;
+		vertical-align: middle;
+	}
+	.aboutImage {
+		background-color: #7aa5b8;
+	}
+	.about2 {
+		flex-direction: column;
+	}
+	.twee {
+		float: left;
+		vertical-align: middle;
+	}
+	.hobbyimage {
+		background-color: #7aa5b8;
+	}
+	.contact {
+		flex-direction: column;
+	}
+}
+.aboutText2 {
 	width: 50%;
-	height: 640px;
+	height: 800px;
 	display: inline-block;
 	position: relative;
 	float: left;
 	vertical-align: middle;
 }
-.een {
+.een1 {
 	background-color: #b0c5cc;
-}
-.twee {
-	background-color: #7aa5b8;
-}
-.hobbyimage {
-	background-color: #7aa5b8;
-	background-image: url("afbeeldingen/1x/afbeelding4.png");
-	background-repeat: no-repeat;
-	background-position: center;
+
+	display: inline-block;
 	position: relative;
+	float: left;
 }
-@media screen and (max-width: 768px) {
-	.about {
-		flex-direction: column;
-	}
+.contact {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.contact div {
+	flex: 1;
 }

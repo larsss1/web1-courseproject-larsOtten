@@ -2,23 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Copatible" content="IE=edge" />
-		<meta name="vieuwport" content="Width=divice-width, initial-scale=1.0" />
-		<title>lars Otten</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lars Otten</title>
 		<link rel="stylesheet" href="stylesheet.css" />
 	</head>
 	<body>
 		<header>
 			<div class="wrapper">
-				<nav>
-					<a href="#" class="white">werk</a>
-					<a href="index2.html" class="white">over mij</a>
-					<a href="index3.html" class="white>">contact</a>
-				</nav>
 				<h1>Lars Otten</h1>
-				<h2>graphic & motion designer<br />based in bxl</h2>
+				<div class="menu-toggle" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav>
+					<a href="index.html" class="white">werk</a>
+					<a href="index2.html" class="white">over mij</a>
+					<a href="index3.html" class="white">contact</a>
+				</nav>
 			</div>
 		</header>
+
 		<div class="fotoh">
 			<img src="afbeeldingen/1x/Asset 2.png" />
 		</div>
@@ -42,5 +47,11 @@
 			<div class="kader2"></div>
 			<h5>project three</h5>
 		</div>
+		<script>
+			function toggleMenu() {
+				const nav = document.querySelector("nav");
+				nav.classList.toggle("show");
+			}
+		</script>
 	</body>
 </html>

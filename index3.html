@@ -6,35 +6,36 @@
 		<meta name="vieuwport" content="Width=divice-width, initial-scale=1.0" />
 		<title>lars Otten</title>
 		<link rel="stylesheet" href="stylesheet.css" />
-		<style>
-			p {
-				font-size: 65px;
-				margin: 0;
-				padding-top: 16px;
-				text-align: left;
-				color: #11314a;
-			}
-		</style>
 	</head>
 	<body>
 		<header>
 			<div class="wrapper">
+				<h1>Lars Otten</h1>
+				<div class="menu-toggle" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<nav>
 					<a href="index.html" class="white">werk</a>
 					<a href="index2.html" class="white">over mij</a>
-					<a href="index3.html" class="white>">contact</a>
+					<a href="index3.html" class="white">contact</a>
 				</nav>
-				<p>lars Otten</p>
 			</div>
 		</header>
-
 		<div class="contact">
-			<div class="contactFoto aboutImage2"></div>
+			<div class="contactFoto"><img src="afbeeldingen/1x/larshelm.jpg" /></div>
 
-			<div class="aboutText2 een">
+			<div class="aboutText2">
 				<h2>Adres</h2>
 				<h4>Hooornzeelstraat 49 <br />3080 Tervuren <br />Lars@otten.be</h4>
 			</div>
 		</div>
+		<script>
+			function toggleMenu() {
+				const nav = document.querySelector("nav");
+				nav.classList.toggle("show");
+			}
+		</script>
 	</body>
 </html>

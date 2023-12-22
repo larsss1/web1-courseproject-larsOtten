@@ -19,43 +19,56 @@
 	<body>
 		<header>
 			<div class="wrapper">
+				<h1>Lars Otten</h1>
+				<div class="menu-toggle" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<nav>
 					<a href="index.html" class="white">werk</a>
 					<a href="index2.html" class="white">over mij</a>
-					<a href="index3.html" class="white>">contact</a>
+					<a href="index3.html" class="white">contact</a>
 				</nav>
-				<p>lars Otten</p>
 			</div>
 		</header>
 
-		<div class="about">
-			<div class="aboutFoto aboutImage"></div>
-
-			<div class="aboutText een">
-				<h2 align="left">over mij</h2>
-				<h4 align="left">
+		<div class="about1">
+			<div class="aboutImage"></div>
+			<img src="afbeeldingen/1x/larshelm.png" />
+			<div class="een">
+				<h2>over mij</h2>
+				<h4>
 					Ik ben Lars, een creatief designer in opleiding in de
-					Erasmushogeschool in Brussel. <br /><br />
+					Erasmushogeschool in Brussel.
+					<br /><br />
 					Mijn focus ligt momenteel op het verder ontwikkelen van mijn design,
-					motion en development skills.
+					motion en development skills.<br /><br />
 				</h4>
 			</div>
 		</div>
-
-		<div class="about">
-			<div class="aboutText twee">
-				<h2 align="right">Mijn passies & hobby’s</h2>
-				<h4 align="right">
+		<div class="about2">
+			<div class="twee">
+				<h2>Mijn passies & hobby’s</h2>
+				<h4>
 					Naast het ontwikkelen van digitale media hou ik mij bezig met
 					videogames en ben ik geïnteresseerd in beeldcultuur en verhalen zoals
 					op Netflix.
 					<br /><br />
 					Mijn grote passie ligt momenteel bij gevechtssporten. Ik train mma en
-					doe aan gewichtheffen..
+					doe aan gewichtheffen.<br /><br />
 				</h4>
 			</div>
 
-			<div class="aboutFoto hobbyimage"></div>
+			<div class="hobbyimage">
+				<img src="afbeeldingen/1x/afbeelding4.png" />
+			</div>
 		</div>
+		<script>
+			function toggleMenu() {
+				const nav = document.querySelector("nav");
+				nav.classList.toggle("show");
+			}
+		</script>
 	</body>
 </html>
